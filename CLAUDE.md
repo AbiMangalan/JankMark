@@ -5,7 +5,7 @@
 
 ## What this repo is
 
-**JankMark** is a free, zero-overlay Android game performance profiler made by
+**JankMark** is a zero-overlay Android performance profiler made by
 Abi Mangalan (GitHub @AbiMangalan / YouTube: SoC Benchmarks).
 
 This repo's sole purpose:
@@ -31,7 +31,7 @@ D:\Workspace\JankMark-src\      ← source repo (private, never publish)
 | `README.md` | Main landing page — features, install, links |
 | `CHANGELOG.md` | User-facing release notes, one section per version |
 | `SECURITY.md` | Vulnerability disclosure policy |
-| `LICENSE` | "Free to use, closed source" notice |
+| `LICENSE` | Proprietary, closed-source notice |
 | `MAINTAINER_NOTES.md` | Private ops notes (git-ignored, never pushed) |
 | `docs/CONNECTING.md` | USB + wireless ADB setup guide |
 | `docs/INSTALL.md` | Windows install + SmartScreen note |
