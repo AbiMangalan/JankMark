@@ -8,7 +8,7 @@ Stream live FPS, frame-time, and hardware telemetry from any Android device to a
 clean PC dashboard — over ADB, with no overlay on your phone and nothing written
 to the device.
 
-*by SoC Benchmarks*
+*by [AbiMangalan](https://github.com/AbiMangalan) &nbsp;·&nbsp; [YouTube](https://www.youtube.com/@socbenchmarks)*
 
 [![Download](https://img.shields.io/badge/Download-Latest%20Release-2ECC71?style=for-the-badge)](https://github.com/AbiMangalan/JankMark/releases/latest)
 &nbsp;
@@ -83,8 +83,10 @@ Your reports and ideas directly influence what gets built next.
 
 ## About
 
-JankMark is made by **[SoC Benchmarks](https://www.youtube.com/@socbenchmarks)** —
-a channel about smartphone & tablet System-on-Chip performance and gaming.
+JankMark is made by **[AbiMangalan](https://github.com/AbiMangalan)**.
+
+- GitHub: [github.com/AbiMangalan](https://github.com/AbiMangalan)
+- YouTube: [youtube.com/@socbenchmarks](https://www.youtube.com/@socbenchmarks)
 
 ## License
 
