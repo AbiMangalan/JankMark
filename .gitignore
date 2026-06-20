@@ -1,0 +1,8 @@
+# This is the PUBLIC repo — no source code lives here.
+# Only docs, issue templates, brand assets, and release binaries (via Releases).
+
+# Local scratch / private notes (do not publish)
+MAINTAINER_NOTES.md
+*.local
+.DS_Store
+Thumbs.db

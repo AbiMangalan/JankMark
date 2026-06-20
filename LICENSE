@@ -1,0 +1,37 @@
+JankMark — End User License Agreement
+Copyright (c) 2026 Abi Mangalan. All rights reserved.
+
+JankMark ("the Software") is proprietary, closed-source software made available
+free of charge for personal and commercial use, subject to the terms below.
+
+GRANT
+You are granted a free, non-exclusive, non-transferable license to download,
+install, and use the compiled Software for the purpose of profiling and
+analyzing device performance.
+
+RESTRICTIONS
+You may NOT:
+  - reverse engineer, decompile, or disassemble the Software, except to the
+    extent such restriction is expressly prohibited by applicable law;
+  - redistribute, resell, sublicense, or repackage the Software or any part of
+    it;
+  - remove or alter any branding, copyright, or proprietary notices;
+  - represent the Software, or any derivative or clone, as your own.
+
+NO SOURCE CODE
+The source code of the Software is not provided and remains the exclusive
+property of the copyright holder. This repository contains documentation and
+compiled release binaries only.
+
+THIRD-PARTY COMPONENTS
+The Software may bundle third-party components (for example, Android Platform
+Tools / adb) that are subject to their own licenses. Those licenses are
+acknowledged in the application's notices where applicable.
+
+NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. THE COPYRIGHT HOLDER IS NOT LIABLE FOR ANY CLAIM, DAMAGES, OR DEVICE
+ISSUES ARISING FROM THE USE OF THE SOFTWARE. USB debugging is a developer
+feature; you use it at your own risk.
+
+"JankMark" and the JankMark logo are trademarks of Abi Mangalan / SoC Benchmarks.
