@@ -46,7 +46,9 @@ enthusiasts, and curious users who want the real numbers behind the marketing.
 - Synchronized crosshair across all charts — hover any point and see the
   correlated values on every other chart at that exact moment.
 - Automatic app name + icon lookup for the game you are profiling.
-- Exportable, branded session reports (HTML + Markdown).
+- **In-app session library** — every session auto-saved and viewable anytime; open
+  past sessions with full interactive charts, rename, or delete them. Screenshot
+  export for quick sharing.
 - USB **or** Wi-Fi (wireless debugging) connection, with multi-device selection.
 
 See [docs/METRICS.md](docs/METRICS.md) for a full explanation of every metric
