@@ -1,11 +1,11 @@
 # FAQ
 
-**Is JankMark really free?**
-Yes. No paywall, no subscription. Supporting development is optional.
+**Does it cost anything to use JankMark?**
+No. No account required, no paywall, no subscription.
 
 **Is it open source?**
-No. JankMark is closed source but free to use. This repo holds the
-documentation and the release downloads, not the source code.
+No. JankMark is closed source. This repo holds the documentation and the
+release downloads, not the source code.
 
 **Does it put an overlay on my phone or change my device?**
 No. JankMark reads telemetry over ADB from your PC. Nothing is drawn on the

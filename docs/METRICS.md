@@ -189,6 +189,35 @@ across devices or sessions.
 | Max Temp | Highest temperature reading |
 | Throttle events | Number of samples at or above 45 °C |
 
+### Power card
+
+| Row | What it means |
+|---|---|
+| Avg power | Mean power draw in Watts over the session |
+| Peak power | Highest single-sample power reading |
+| Avg battery | Mean battery level during the session |
+| Avg voltage | Mean battery voltage — lower under sustained load |
+| Min voltage (sag) | Lowest voltage reading; measures "voltage sag" under peak load |
+| Avg current | Mean current draw in Amps |
+| Peak current | Highest current draw (useful for checking against rated limits) |
+
+---
+
+## Power, voltage, and current plots
+
+The bottom two rows of the live dashboard show four power-related plots:
+
+- **Power (W)** — computed as voltage × |current|. Correlate with FPS drops to identify load spikes.
+- **Battery (%)** — level over time. A steep decline indicates high drain.
+- **Voltage (V)** — nominal Li-ion range 3.0–4.5 V. Significant dips under load (voltage sag) can trigger SoC throttling on some devices.
+- **Current (A)** — absolute draw. Sustained 3–5 A during gaming is normal for flagship devices.
+
+> **Availability:** power/voltage/current readings use `dumpsys battery`
+> (`current now:` and `voltage:` fields — available on Samsung and many
+> MediaTek devices) with a sysfs `/sys/class/power_supply/*/current_now`
+> fallback for AOSP-stock devices. If neither source is available, these
+> plots stay empty and the report rows show "—".
+
 ---
 
 ## Tips for meaningful sessions

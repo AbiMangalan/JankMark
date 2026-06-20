@@ -2,7 +2,7 @@
 
 <img src="assets/logo_lockup.png" width="460" alt="JankMark — Performance Profiler">
 
-**A free, zero-overlay Android game performance profiler.**
+**Zero-overlay Android performance profiler.**
 
 Stream live FPS, frame-time, and hardware telemetry from any Android device to a
 clean PC dashboard — over ADB, with no overlay on your phone and nothing written
@@ -13,8 +13,6 @@ to the device.
 [![Download](https://img.shields.io/badge/Download-Latest%20Release-2ECC71?style=for-the-badge)](https://github.com/AbiMangalan/JankMark/releases/latest)
 &nbsp;
 ![Platform](https://img.shields.io/badge/platform-Windows-181A1F?style=for-the-badge)
-&nbsp;
-![Price](https://img.shields.io/badge/price-Free-FF2A6D?style=for-the-badge)
 
 </div>
 
@@ -23,12 +21,10 @@ to the device.
 ## Why JankMark?
 
 Most Android performance tools are either locked behind a paywall, hard to set
-up, or not available in English. JankMark is **free to use**, made for the people
-who actually care about device performance — smartphone reviewers, benchmarking
-enthusiasts, and curious users who want the real numbers behind the marketing.
+up, or not available in English. JankMark is made for the people who actually
+care about device performance — smartphone reviewers, benchmarking enthusiasts,
+and curious users who want the real numbers behind the marketing.
 
-- **Free.** No paywall, no subscription. If you want to support development,
-  that is your choice — never a requirement.
 - **Zero overlay.** Nothing is drawn on your phone screen and nothing is written
   to the device. JankMark reads telemetry over ADB from your PC.
 - **The numbers reviewers quote.** FPS, frame-time, 5% / 1% / 0.1% lows, jank %,
@@ -45,7 +41,7 @@ enthusiasts, and curious users who want the real numbers behind the marketing.
 - CPU and GPU clock-frequency charts to spot thermal throttling instantly.
 - Synchronized crosshair across all charts — hover any point and see the
   correlated values on every other chart at that exact moment.
-- Automatic app name + icon lookup for the game you are profiling.
+- Automatic app name + icon lookup for the app you are profiling.
 - **In-app session library** — every session auto-saved and viewable anytime; open
   past sessions with full interactive charts, rename, or delete them. Screenshot
   export for quick sharing.
@@ -57,7 +53,7 @@ and how to interpret your results.
 ## Install
 
 1. Go to the [**Releases**](https://github.com/AbiMangalan/JankMark/releases/latest) page.
-2. Download the latest \`JankMark_Setup\` installer.
+2. Download the latest `JankMark_Setup` installer.
 3. Run it and follow the prompts.
 4. Launch JankMark from the Start Menu.
 
@@ -74,8 +70,7 @@ guide (including how to enable Developer Options).
 
 ## Feedback & community
 
-JankMark is **closed source** but free to use, and it is shaped by community
-feedback. The best way to help:
+JankMark is **closed source** and shaped by community feedback. The best way to help:
 
 - Report a bug: https://github.com/AbiMangalan/JankMark/issues/new?template=bug_report.md
 - Request a feature: https://github.com/AbiMangalan/JankMark/issues/new?template=feature_request.md
@@ -92,7 +87,7 @@ JankMark is made by **[AbiMangalan](https://github.com/AbiMangalan)**.
 
 ## License
 
-JankMark is **free to use**. The software is distributed as compiled binaries;
-the source code is proprietary and closed. See [LICENSE](LICENSE).
+JankMark is distributed as compiled binaries; the source code is proprietary
+and closed. See [LICENSE](LICENSE).
 
 All rights reserved (c) Abi Mangalan.
