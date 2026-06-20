@@ -95,19 +95,27 @@ dropped frame or stutter.
 | 5–15% | Noticeable — frequent hitches during demanding scenes |
 | > 15% | Poor — game is struggling to maintain its frame rate |
 
-### CPU %
+### CPU % / GHz
 
 Average utilisation across all CPU cores, reported by the device kernel. A
 sustained CPU % near 100% indicates a CPU-bound workload; if FPS is also low,
 the CPU is the bottleneck.
 
-### GPU %
+**Toggle:** click the unit label ("%" or "GHz") on the CPU gauge to switch
+between usage percentage and current clock speed. A sudden clock-speed drop
+mid-session confirms thermal throttling.
+
+### GPU % / GHz
 
 GPU engine utilisation, where available. Many Android devices restrict this
 reading to rooted access — if your device does not expose it, this card shows
 "—".
 
 A GPU % near 100% with normal CPU % indicates a GPU-bound workload.
+
+**Toggle:** click the unit label ("%" or "GHz") on the GPU gauge to switch
+between usage and clock speed. The clock-speed view is the fastest way to see
+if the GPU is being throttled.
 
 ### RAM (MB / %)
 

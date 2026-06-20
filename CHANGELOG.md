@@ -9,12 +9,16 @@ First public beta release.
 
 ### Added
 
-- **5% Low, 1% Low, 0.1% Low FPS** — three low-percentile stats derived from
+- **5% Low, 1% Low, and 0.1% Low FPS** — three low-percentile stats derived from
   frame-interval percentiles (p95/p99/p99.9). All three are shown on the live
   dashboard and in session reports.
 - **GPU frequency telemetry** — avg and peak GPU clock speed (MHz) in reports,
   alongside the existing CPU frequency stats. Shown when the device exposes the
   reading; unavailable values are omitted cleanly rather than shown as errors.
+- **CPU and GPU clock-frequency gauges** — click the unit label ("%" or "GHz")
+  on either the CPU or GPU circular gauge to toggle between usage percentage and
+  clock speed. Useful for spotting thermal throttling at a glance without opening
+  the frequency charts.
 - **Branded onboarding screen** — JankMark logo and tagline on the connection
   screen; USB and Wi-Fi tiles with illustrated glyphs; animated spinner during
   device search; collapsible "How to enable USB debugging" guide inline.
