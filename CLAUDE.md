@@ -65,9 +65,12 @@ D:\Workspace\JankMark-src\      ← source repo (private, never publish)
 - Before editing `README.md`, read it first; don't duplicate or contradict the
   existing features list. Update conservatively — users cite README text in reviews.
 
-## Current release status (as of 2026-06-20)
+## Current release status (as of 2026-06-22)
 
-- **v0.2.0-beta** is the target first public release (not yet tagged/uploaded).
-- Installer is not yet built. Source is code-complete in `JankMark-src`.
-- Steps remaining: build Inno Setup installer → upload to GitHub Releases here →
-  push tag `v0.2.0-beta`.
+- **v0.2.1-beta** is the target first public release. Source is code-complete in
+  `JankMark-src` (committed to `master`, not yet pushed); tests green.
+- Installer is not yet built/uploaded. README, CHANGELOG, and docs/METRICS here
+  are updated to the 0.2.1-beta feature set.
+- Steps remaining: local device testing → `just build` → `just installer` in
+  `JankMark-src` → upload the installer to GitHub Releases here → push tag
+  `v0.2.1-beta`.

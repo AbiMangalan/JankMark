@@ -3,6 +3,45 @@
 All notable changes to JankMark are documented here. This project follows
 [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
 
+## [0.2.1-beta] — 2026-06-22
+
+### Added
+
+- **Separate CPU, GPU & battery temperatures** — the Temperature chart now plots
+  all three as their own lines instead of a single combined reading.
+- **Hover "?" badges** on every metric explaining what it means.
+- **"What's New"** dialog shown once after each update.
+
+### Improved
+
+- **Frame time reflects what's on screen** — JankMark now shows the real on-screen
+  frame interval (120 FPS ≈ 8.3 ms, 60 FPS ≈ 16.7 ms), like desktop frame-time
+  tools, with a **cadence indicator** (Even / Fractional / Uneven) that explains
+  the pattern. On a 120 Hz screen, frame rates that don't divide evenly (e.g. 90)
+  naturally step between 8.3 and 16.7 ms — that's vsync ("Fractional"), not stutter.
+- **Wider GPU support** — reads GPU usage without root on more devices (including
+  via the Adreno busy counter); when a device blocks GPU stats, the gauge explains
+  why instead of showing a blank.
+- **Smarter graph scaling** — the FPS and frame-time charts scale to the bulk of
+  the data, so a single spike no longer flattens everything; faint 30 / 60 / 90 /
+  120 guide lines on the FPS chart.
+- **Sharper app icon** that fills the tile properly — on the taskbar, in shortcuts,
+  and in the installer.
+- **Cleaner installer** — closes a running JankMark before upgrading and removes
+  old files on reinstall.
+
+### Fixed
+
+- Recording no longer starts until real frames arrive — no more empty sessions if
+  you press Start before the game finishes loading.
+- A clear "check your phone for a USB authorisation prompt" message when the ADB
+  connection drops mid-session.
+- The Wi-Fi connection error no longer overlaps the IP field, and the duplicated
+  help/links at the bottom of the connect screen are gone.
+- Chart hover tooltips no longer get clipped at the edges of a graph.
+
+---
+
 ## [0.2.0-beta] — 2026-06-21
 
 First public beta release.

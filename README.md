@@ -28,17 +28,23 @@ and curious users who want the real numbers behind the marketing.
 - **Zero overlay.** Nothing is drawn on your phone screen and nothing is written
   to the device. JankMark reads telemetry over ADB from your PC.
 - **The numbers reviewers quote.** FPS, frame-time, 5% / 1% / 0.1% lows, jank %,
-  plus CPU, GPU, RAM, temperature, and clock frequency telemetry.
+  plus CPU, GPU, RAM, separate CPU/GPU/battery temperatures, clock frequency, and
+  power / voltage / current telemetry.
 - **Beautiful, readable dashboard.** Live charts with synchronized crosshairs,
   not a wall of raw numbers.
 
 ## Features
 
-- Live FPS and frame-time graphs with a jank-threshold reference line.
+- Live FPS and frame-time graphs that auto-scale to your data — a smoothed
+  frame-time trend over the raw per-frame line, with 30 / 60 / 90 / 120 FPS guides.
 - **5% Low, 1% Low, and 0.1% Low** percentile FPS stats — the numbers that
   tell you how the game feels, not just how fast it runs on average.
-- CPU, GPU, RAM, and temperature telemetry with live circular gauges and plots.
+- CPU, GPU, RAM, and temperature telemetry with live circular gauges and plots —
+  CPU, GPU, and battery temperatures are charted separately.
+- Power, battery, voltage, and current live charts.
 - CPU and GPU clock-frequency charts to spot thermal throttling instantly.
+- Hover the **?** on any metric for a plain-English explanation; GPU stats that a
+  device blocks without root tell you why, instead of showing a blank.
 - Synchronized crosshair across all charts — hover any point and see the
   correlated values on every other chart at that exact moment.
 - Automatic app name + icon lookup for the app you are profiling.

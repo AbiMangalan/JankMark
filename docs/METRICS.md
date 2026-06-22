@@ -14,8 +14,9 @@ to interpret it when reviewing a session.
 4. Play the game for as long as you need — the longer the session, the more
    meaningful the low-percentile stats.
 5. Click **Stop** (or press **Space** again).
-6. Click **View Report** to open the full session summary, or export it as HTML
-   or Markdown.
+6. Click **View Report** to open the full session summary; the report can be
+   saved as a PNG screenshot. Every session is also auto-saved to your session
+   library (**File → Sessions**) to reopen later.
 
 ---
 
@@ -75,12 +76,22 @@ garbage collection pauses, or thermal throttle events.
 
 ### Frame Time (ms)
 
-How long the most recently rendered frame took to produce, in milliseconds.
-The live value updates each polling cycle.
+The **on-screen presentation interval** — how long each frame is actually shown
+before the next one appears. This is the same metric desktop frame-time tools
+report: ~8.3 ms at 120 FPS, ~16.7 ms at 60 FPS. Lower and steadier is smoother.
 
-The frame-time **chart** shows the full time series. The red dashed line marks
-the **frame budget** (default: 16.67 ms for a 60 FPS target — one second
-divided by 60). Any bar above this line is a jank frame.
+The chart plots the **raw** per-frame interval (the short/long jitter *is* the
+pacing information, so it isn't smoothed away) and shows a small **cadence badge**
+that interprets the pattern:
+
+- **Even** — one steady interval; clean pacing (e.g. 120 FPS on 120 Hz).
+- **Fractional** — a stable mix because the frame rate doesn't divide the refresh
+  (e.g. 90 FPS on 120 Hz alternates 8.3/16.7 ms). This is vsync, **not** stutter.
+- **Uneven** — a short/long mix around a rate that *should* divide the refresh
+  (e.g. a 60 FPS cap on 120 Hz with 8/25 ms pairs) — real frame-pacing jitter.
+
+The chart auto-scales to the bulk of the data, so a single spike doesn't flatten
+everything.
 
 ### Jank %
 
@@ -107,9 +118,12 @@ mid-session confirms thermal throttling.
 
 ### GPU % / GHz
 
-GPU engine utilisation, where available. Many Android devices restrict this
-reading to rooted access — if your device does not expose it, this card shows
-"—".
+GPU engine utilisation, where available. JankMark reads this without root on the
+devices that expose it (Samsung, and many Qualcomm/Adreno devices via the kgsl
+busy counter). Some devices and Android versions block GPU stats for non-root
+apps — when that happens the gauge shows **N/A** with a tooltip explaining why,
+rather than a blank. Usage and clock speed can be blocked independently, so if
+one reads N/A the other may still work (toggle the unit to check).
 
 A GPU % near 100% with normal CPU % indicates a GPU-bound workload.
 
@@ -128,9 +142,12 @@ RAM. A steadily rising value during a session can indicate a memory leak.
 
 ### Temp (°C)
 
-Device skin temperature, typically from the battery or SoC thermal zone,
-depending on the device. Temperatures above ~45 °C typically trigger Android's
-thermal throttle, which can cause sudden FPS drops.
+The **Peak Temp** card shows the hottest sensor on the device. The Temperature
+**chart** plots **CPU, GPU, and battery** temperatures as three separate lines
+(from the device's thermal sensors), so you can see which part is heating up.
+Temperatures above ~45 °C typically trigger Android's thermal throttle, which
+can cause sudden FPS drops. A device that exposes only some sensors plots the
+ones it has.
 
 ---
 
@@ -171,11 +188,9 @@ across devices or sessions.
 
 ### Frame time card
 
-- **Average** — mean render latency across the session.
+- **Average** — mean presentation interval across the session.
 - **P95 / P99** — 95th and 99th percentile frame times. P95 maps directly to
   the 5% Low FPS; P99 maps to the 1% Low FPS.
-- **Frames > budget** — count and percentage of frames that exceeded the budget
-  line.
 
 ### Hardware card
 
