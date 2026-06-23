@@ -7,6 +7,12 @@ All notable changes to JankMark are documented here. This project follows
 
 ### Added
 
+- **Searchable app picker** — the package selector is now type-to-search
+  (case-insensitive, matches anywhere in the name/package), so you no longer
+  scroll a long list to find your game.
+- **Auto-detect the running app** — a **Detect** button selects whatever app is
+  currently open on your device; while recording, JankMark also flags when the
+  profiled app leaves the foreground with an "App not in foreground" overlay.
 - **Separate CPU, GPU & battery temperatures** — the Temperature chart now plots
   all three as their own lines instead of a single combined reading.
 - **Hover "?" badges** on every metric explaining what it means.
