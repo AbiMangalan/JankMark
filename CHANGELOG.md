@@ -43,9 +43,8 @@ All notable changes to JankMark are documented here. This project follows
 - **Scrollable, zoomable report timeline** — long sessions open at a readable
   window; drag to pan through the timeline and scroll to zoom, with every chart
   staying time-aligned.
-- **Wider GPU support** — reads GPU usage without root on more devices (including
-  via the Adreno busy counter); when a device blocks GPU stats, the gauge explains
-  why instead of showing a blank.
+- **Wider GPU support** — reads GPU usage without root on more devices; when a
+  device blocks GPU stats, the gauge explains why instead of showing a blank.
 - **Smarter graph scaling** — the FPS and frame-time charts scale to the bulk of
   the data, so a single spike no longer flattens everything; faint 30 / 60 / 90 /
   120 guide lines on the FPS chart.
