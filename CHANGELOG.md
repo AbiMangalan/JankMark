@@ -3,7 +3,7 @@
 All notable changes to JankMark are documented here. This project follows
 [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH).
 
-## [0.2.1-beta] — 2026-06-22
+## [0.2.1-beta] — 2026-06-23
 
 ### Added
 
@@ -11,6 +11,13 @@ All notable changes to JankMark are documented here. This project follows
   all three as their own lines instead of a single combined reading.
 - **Hover "?" badges** on every metric explaining what it means.
 - **"What's New"** dialog shown once after each update.
+- **"Not supported on this device" overlays** — when a phone can't expose a metric
+  (e.g. GPU usage on some Pixels), the chart now says so with a "?" that explains
+  why, instead of leaving an empty graph.
+- **Frame-time graph explainer** — a "?" on the Frame Time chart (live and in
+  reports) explains why a phone's frame time steps up and down: phones refresh on a
+  fixed beat and mostly lack desktop-style variable refresh (VRR / G-Sync /
+  FreeSync), so normal vsync pacing isn't mistaken for stutter.
 
 ### Improved
 
@@ -19,6 +26,17 @@ All notable changes to JankMark are documented here. This project follows
   tools, with a **cadence indicator** (Even / Fractional / Uneven) that explains
   the pattern. On a 120 Hz screen, frame rates that don't divide evenly (e.g. 90)
   naturally step between 8.3 and 16.7 ms — that's vsync ("Fractional"), not stutter.
+- **Gauges auto-pick the mode that has data** — on devices where only GPU usage or
+  only GPU clock is readable, the gauge now starts on whichever one your phone
+  actually reports instead of showing a blank "N/A" (you can still click to switch).
+- **Temperature gauge cycles sensors** — click the °C on the Temperature gauge to
+  cycle Max → CPU → GPU → Battery (skipping any sensor your device doesn't expose).
+- **Clearer temperature graph hover** — hovering the Temperature chart now snaps to
+  the line nearest your cursor and names it (e.g. "GPU 50 °C"); hovering another
+  chart shows all three temperatures at once.
+- **Scrollable, zoomable report timeline** — long sessions open at a readable
+  window; drag to pan through the timeline and scroll to zoom, with every chart
+  staying time-aligned.
 - **Wider GPU support** — reads GPU usage without root on more devices (including
   via the Adreno busy counter); when a device blocks GPU stats, the gauge explains
   why instead of showing a blank.

@@ -65,10 +65,11 @@ D:\Workspace\JankMark-src\      ← source repo (private, never publish)
 - Before editing `README.md`, read it first; don't duplicate or contradict the
   existing features list. Update conservatively — users cite README text in reviews.
 
-## Current release status (as of 2026-06-22)
+## Current release status (as of 2026-06-23)
 
 - **v0.2.1-beta** is the target first public release. Source is code-complete in
-  `JankMark-src` (committed to `master`, not yet pushed); tests green.
+  `JankMark-src` and **pushed to `master`** (includes the 2026-06-23 pre-release
+  UI/UX polish pass); tests green (53/53), ruff clean, mypy 21.
 - Installer is not yet built/uploaded. README, CHANGELOG, and docs/METRICS here
   are updated to the 0.2.1-beta feature set.
 - Steps remaining: local device testing → `just build` → `just installer` in
